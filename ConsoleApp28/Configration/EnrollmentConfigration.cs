@@ -14,7 +14,7 @@ namespace ConsoleApp28.Configration
         public void Configure(EntityTypeBuilder<Enrollment> builder)
         {
 
-            builder.HasKey(e => new { e.CourseId, e.Student });
+            builder.HasKey(e => new { e.CourseId, e.StudentId });
             
 
             builder.Property(e => e.EnrolledAt)

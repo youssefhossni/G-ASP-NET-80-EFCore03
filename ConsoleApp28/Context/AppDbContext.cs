@@ -21,6 +21,7 @@ namespace ConsoleApp28.Context
 
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+            modelBuilder.Seed();
         }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Category> Categories { get; set; }
